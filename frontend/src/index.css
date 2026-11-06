@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Manrope, ui-sans-serif, system-ui, sans-serif;
+  color: #241b20;
+  background: #fffaf5;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 8% 8%, rgba(255, 93, 143, .15), transparent 28rem),
+    radial-gradient(circle at 96% 30%, rgba(255, 213, 75, .20), transparent 24rem),
+    #fffaf5;
+}
+
+button, input, textarea, select { font: inherit; }
+button { -webkit-tap-highlight-color: transparent; }
+
+::selection { background: #ffb6cc; color: #241b20; }
+
+@layer components {
+  .panel { @apply rounded-[2rem] border border-[#241b20]/10 bg-white/90 shadow-card backdrop-blur; }
+  .field { @apply w-full rounded-2xl border border-[#241b20]/15 bg-[#fffaf5] px-4 py-3 text-[15px] font-semibold outline-none transition placeholder:text-[#776b71]/60 focus:border-[#ff5d8f] focus:ring-4 focus:ring-[#ff5d8f]/10; }
+  .label { @apply mb-2 block text-sm font-extrabold text-[#51454b]; }
+  .btn-primary { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border-2 border-[#241b20] bg-[#ff5d8f] px-5 py-3 text-sm font-extrabold text-white transition hover:-translate-y-0.5 hover:shadow-pop active:translate-y-0 active:shadow-none disabled:pointer-events-none disabled:opacity-50; }
+  .btn-soft { @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-2xl bg-[#f7eef1] px-4 py-2 text-sm font-extrabold transition hover:bg-[#f1e1e7] disabled:pointer-events-none disabled:opacity-50; }
+  .eyebrow { @apply text-xs font-extrabold uppercase tracking-[0.2em] text-[#ff477e]; }
+}
