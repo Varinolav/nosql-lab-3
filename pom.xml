@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>ru.nosql</groupId>
-    <artifactId>lab-2</artifactId>
+    <artifactId>lab-3</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>lab-2</name>
-    <description>lab-2</description>
+    <name>lab-3</name>
+    <description>lab-3</description>
     <url/>
     <licenses>
         <license/>
